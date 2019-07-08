@@ -1,6 +1,10 @@
 // It might be a good idea to add event listener to make sure this file 
 // only runs after the DOM has finshed loading. 
 
+
+///LIKES ARENT WORKING RIGHT, DELETE AND POST IS WORKING
+///WHEN  I ADD NEW QUOTE IT COMES OUT AS UNDEFINED AT FIRST BUT THEN  REVERTS TO 0 AFTER REFRESH
+
 let quotesGet = "http://localhost:3000/quotes?_embed=likes"
 let quotesGet2 = "http://localhost:3000/quotes"
 let likesUrl =  "http://localhost:3000/likes"
