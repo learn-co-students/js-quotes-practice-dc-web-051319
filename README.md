@@ -1,9 +1,4 @@
 # JavaScript Quotes Practice
-- 1. Read directions (you won't understand everything yet)
-- 2. Get to know your starter code (DOM/html) and your data (server's data)
-- 3. Re-read directions (things should make more sense)
-- 4. User stories (see quotes, Submit the form to create a new quote, click delete button to delete quote)
-    - Think about how to translate into the 3 pillars
 
 ## Learning Goals
 
@@ -12,7 +7,7 @@
 
 ## Introduction
 
-Hello, let's build a simple app that allows us to keep track of our favorite quotes and who said them.
+Hello, let's build a simple app that allows us to keep track of our favoritequotes and who said them.
 
 ## Use `json-server` to Provide a Basic RESTful Data Store
 
@@ -46,17 +41,15 @@ db.json`.
 * Clicking the delete button should delete the respective quote from the
   database and remove it from the page without having to refresh.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 * Clicking the like button will create a like for this particular quote in the
   API and update the number of likes displayed on the page without having to
   refresh.
   * Use a `POST` request to `http://localhost:3000/likes`
   * The body of the request should be a JSON object containing a key of
     `quoteId`, with an _integer_ value. Use the ID of the quote you're creating
-    the like for — e.g. `{ quoteId: 5 }` to create a like for quote 5. IMPORTANT:
-    if the `quoteID` is a string for some reason (for example, if you've pulled
-    the ID from a dataset) the index page will not include the like you
+    the like for — e.g. `{ quoteId: 5 }` to create a like for quote 5. IMPORTANT: 
+    if the `quoteID` is a string for some reason (for example, if you've pulled 
+    the ID from a dataset) the index page will not include the like you 
     create on _any_ quote.
   * Bonus (not required): add a `createdAt` key to your object to track when
     the like was created. Use [UNIX time][] (the number of seconds since
